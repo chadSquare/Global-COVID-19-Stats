@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>COVID-19 information</title>
+  </head>
+  <body>
+    <header>
+      <h1>COVID-19 INFORMATION</h1>
+    </header>
+    <div class="dash-board-bg">
+      <section class="interface">
+        <div class="info-area">
+          <p>Total Confirmed Cases:</p>
+          <p id="cases">...</p>
+        </div>
+        <div class="info-area">
+          <p>Total Recoveries:</p>
+          <p id="recoveries">...</p>
+        </div>
+        <div class="info-area">
+          <p>Total Deaths:</p>
+          <p id="deaths">...</p>
+        </div>
+
+        <div class="options-area">
+          <h3>Select a Country to Display COVID-19 Data</h3>
+          <select id="country-input"></select>
+          <div class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <h3>Created by Chad Square &copy; 2020</h3>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
